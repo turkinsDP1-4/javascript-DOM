@@ -1,5 +1,12 @@
-window.addEventListener("load", function(){
+window.addEventListener("load", function()
+{
+  const animation = document.querySelector('#more_text_link');
 
+  animation.addEventListener('click', (e) => 
+  {
+    document.getElementById('more_text_content').style.display = "block";
+  });
+});
   // Here is some pseudo-code to help you get started:
 
   // 1. Get the DOM element which will be clicked.
@@ -14,4 +21,3 @@ window.addEventListener("load", function(){
 
   // 5. Also modify the DOM to hide the "More info..." link.
   
-});
